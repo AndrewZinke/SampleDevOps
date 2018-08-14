@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.ListOfCustomers</h2>
+
+
+@foreach(var c in ViewBag.Customers)
+{
+    <div>
+        @c.Id - @c.FisrtName - @c.LastName
+    </div>
+}
